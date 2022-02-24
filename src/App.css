@@ -1,38 +1,111 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
   text-align: center;
+  margin-top: 6%;
+}
+.App button{
+  padding: 10px 28px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  cursor: pointer;
+  margin-bottom: 22px;
+}
+.App button:hover{
+  background-image: linear-gradient(to right, #29323C, #485563, #2B5876, #4E4376);
+  color: aliceblue;
+  border: 1px solid white;
+}
+.App input{
+  width: 50%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 4px 1px 8px black;
+}
+.App input:hover{
+  border: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  margin-left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 22px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
+.center{
+  display: flex;
+  margin: 16px;
+  box-shadow: 4px 1px 8px black;
+  padding: 6px;
+  border-radius: 6px;
+  
+  width: 250px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.center-img{
+ width: 40%;
+ display: flex;
+}
+.center-img img{
+ width: 100%;
+}
+.content{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* justify-content: space-evenly; */
+  width: 80%;
+  /* margin: 14px; */
+}
+.title{
+  padding-bottom:6% ;
+}
+.title{
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #29323C;
+  cursor: pointer;
+}
+.detail-img {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+.detail-img img{
+width: 80%;
+height: 550px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-img p{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 22px;
+   font-weight: bold;
+}
+.detail-des p {
+   font-size: 22px;
+   font-weight: bold;
+   margin: 22px;
+   cursor: pointer;
+}
+.detail-des p:hover {
+   color: blue;
+}
+.error{
+  color: red;
 }
